@@ -117,7 +117,7 @@ struct FirstOOBEPrompt: View {
             NavigationLink(destination: SecondOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     
                     HStack {
@@ -138,7 +138,7 @@ struct FirstOOBEPrompt: View {
             NavigationLink(destination: SecondOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     HStack {
                         Image("Outdoors")
@@ -299,7 +299,7 @@ struct ThirdOOBEPrompt: View {
             NavigationLink(destination: FourthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Frequently (2-3 days)")
                         .fontWeight(.heavy)
@@ -311,7 +311,7 @@ struct ThirdOOBEPrompt: View {
             NavigationLink(destination: FourthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Often (1-2 weeks)")
                         .fontWeight(.heavy)
@@ -323,7 +323,7 @@ struct ThirdOOBEPrompt: View {
             NavigationLink(destination: FourthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Seldom (1-2 months)")
                         .fontWeight(.heavy)
@@ -370,7 +370,7 @@ struct FourthOOBEPrompt: View {
             NavigationLink(destination: FifthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Easy 💤")
                         .fontWeight(.heavy)
@@ -382,7 +382,7 @@ struct FourthOOBEPrompt: View {
             NavigationLink(destination: FifthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Medium 😅")
                         .fontWeight(.heavy)
@@ -394,7 +394,7 @@ struct FourthOOBEPrompt: View {
             NavigationLink(destination: FifthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Hard 🏋️")
                         .fontWeight(.heavy)
@@ -441,7 +441,7 @@ struct FifthOOBEPrompt: View {
             NavigationLink(destination: FifthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Purifies air naturally")
                         .fontWeight(.heavy)
@@ -453,7 +453,7 @@ struct FifthOOBEPrompt: View {
             NavigationLink(destination: FifthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Savory herb")
                         .fontWeight(.heavy)
@@ -465,7 +465,7 @@ struct FifthOOBEPrompt: View {
             NavigationLink(destination: FifthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Tasty fruit")
                         .fontWeight(.heavy)
@@ -477,7 +477,7 @@ struct FifthOOBEPrompt: View {
             NavigationLink(destination: FifthOOBEPrompt()) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.deepGray)
+                        .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
                     Text("Healing properties")
                         .fontWeight(.heavy)

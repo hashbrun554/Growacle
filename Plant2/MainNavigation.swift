@@ -19,6 +19,10 @@ struct Plant2App: App {
     }
 }
 
+extension Color {
+    static var darkerGray = Color("deepGray")
+}
+
 struct ContentView: View {
     var body: some View {
         DebugView()
