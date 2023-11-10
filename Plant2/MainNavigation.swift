@@ -20,7 +20,7 @@ struct Plant2App: App {
 }
 
 extension Color {
-    static var darkerGray = Color("deepGray")
+    static var darkerGray = Color("DeepGray")
 }
 
 struct ContentView: View {

@@ -7,18 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC2711C92AFD78E8005031EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2711C82AFD78E8005031EC /* Assets.xcassets */; };
 		CC2711CB2AFDC235005031EC /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2711CA2AFDC235005031EC /* MainNavigation.swift */; };
+		CC9148312AFEBE56004F7FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9148302AFEBE56004F7FDF /* Assets.xcassets */; };
 		CCA9DF1A2ADCD0270083A38A /* OOBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9DF192ADCD0270083A38A /* OOBE.swift */; };
-		CCA9DF212ADCD0280083A38A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA9DF202ADCD0280083A38A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC2711C82AFD78E8005031EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC2711CA2AFDC235005031EC /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		CC9148302AFEBE56004F7FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA9DF142ADCD0270083A38A /* Growacle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Growacle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA9DF192ADCD0270083A38A /* OOBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBE.swift; sourceTree = "<group>"; };
-		CCA9DF202ADCD0280083A38A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,18 +51,9 @@
 			children = (
 				CCA9DF192ADCD0270083A38A /* OOBE.swift */,
 				CC2711CA2AFDC235005031EC /* MainNavigation.swift */,
-				CCA9DF1F2ADCD0280083A38A /* Preview Content */,
+				CC9148302AFEBE56004F7FDF /* Assets.xcassets */,
 			);
 			path = Plant2;
-			sourceTree = "<group>";
-		};
-		CCA9DF1F2ADCD0280083A38A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CC2711C82AFD78E8005031EC /* Assets.xcassets */,
-				CCA9DF202ADCD0280083A38A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +114,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC2711C92AFD78E8005031EC /* Assets.xcassets in Resources */,
-				CCA9DF212ADCD0280083A38A /* Preview Assets.xcassets in Resources */,
+				CC9148312AFEBE56004F7FDF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +259,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Plant2/Preview Content\"";
 				DEVELOPMENT_TEAM = AMYY47BCU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -302,7 +289,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Plant2/Preview Content\"";
 				DEVELOPMENT_TEAM = AMYY47BCU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
