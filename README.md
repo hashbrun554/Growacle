@@ -3,8 +3,6 @@ MS SEF 2023 Project
 
 Growacle is a temporary name, I'm not sure what the name should be yet.
 
-Current featurs
-
 ## Current Features
 - GUI for OOBE (out-of-box-experience)
 - Debug menu
