@@ -25,6 +25,7 @@ extension Color {
 
 struct ContentView: View {
     var body: some View {
+        // Create proper intialization function
         DebugView()
     }
 }
