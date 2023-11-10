@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CCA9DF132ADCD0270083A38A"
-               BuildableName = "Plant2.app"
-               BlueprintName = "Plant2"
-               ReferencedContainer = "container:Plant2.xcodeproj">
+               BuildableName = "Growacle.app"
+               BlueprintName = "Growacle"
+               ReferencedContainer = "container:Growacle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCA9DF132ADCD0270083A38A"
-            BuildableName = "Plant2.app"
-            BlueprintName = "Plant2"
-            ReferencedContainer = "container:Plant2.xcodeproj">
+            BuildableName = "Growacle.app"
+            BlueprintName = "Growacle"
+            ReferencedContainer = "container:Growacle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCA9DF132ADCD0270083A38A"
-            BuildableName = "Plant2.app"
-            BlueprintName = "Plant2"
-            ReferencedContainer = "container:Plant2.xcodeproj">
+            BuildableName = "Growacle.app"
+            BlueprintName = "Growacle"
+            ReferencedContainer = "container:Growacle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

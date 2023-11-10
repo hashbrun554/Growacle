@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		CC2711C82AFD78E8005031EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC2711CA2AFDC235005031EC /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
-		CCA9DF142ADCD0270083A38A /* Plant2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plant2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA9DF142ADCD0270083A38A /* Growacle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Growacle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA9DF192ADCD0270083A38A /* OOBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBE.swift; sourceTree = "<group>"; };
 		CCA9DF202ADCD0280083A38A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,7 +43,7 @@
 		CCA9DF152ADCD0270083A38A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CCA9DF142ADCD0270083A38A /* Plant2.app */,
+				CCA9DF142ADCD0270083A38A /* Growacle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CCA9DF132ADCD0270083A38A /* Plant2 */ = {
+		CCA9DF132ADCD0270083A38A /* Growacle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCA9DF242ADCD0280083A38A /* Build configuration list for PBXNativeTarget "Plant2" */;
+			buildConfigurationList = CCA9DF242ADCD0280083A38A /* Build configuration list for PBXNativeTarget "Growacle" */;
 			buildPhases = (
 				CCA9DF102ADCD0270083A38A /* Sources */,
 				CCA9DF112ADCD0270083A38A /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Plant2;
+			name = Growacle;
 			productName = Plant2;
-			productReference = CCA9DF142ADCD0270083A38A /* Plant2.app */;
+			productReference = CCA9DF142ADCD0270083A38A /* Growacle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CCA9DF0F2ADCD0270083A38A /* Build configuration list for PBXProject "Plant2" */;
+			buildConfigurationList = CCA9DF0F2ADCD0270083A38A /* Build configuration list for PBXProject "Growacle" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CCA9DF132ADCD0270083A38A /* Plant2 */,
+				CCA9DF132ADCD0270083A38A /* Growacle */,
 			);
 		};
 /* End PBXProject section */
@@ -329,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CCA9DF0F2ADCD0270083A38A /* Build configuration list for PBXProject "Plant2" */ = {
+		CCA9DF0F2ADCD0270083A38A /* Build configuration list for PBXProject "Growacle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCA9DF222ADCD0280083A38A /* Debug */,
@@ -338,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCA9DF242ADCD0280083A38A /* Build configuration list for PBXNativeTarget "Plant2" */ = {
+		CCA9DF242ADCD0280083A38A /* Build configuration list for PBXNativeTarget "Growacle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCA9DF252ADCD0280083A38A /* Debug */,
