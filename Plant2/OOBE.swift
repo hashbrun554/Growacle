@@ -6,54 +6,13 @@
 //
 
 import SwiftUI
-import SwiftData
-
-struct ContentView: View {
-    @State private var showInformationAlert = false
-    
-    var body: some View {
-        NavigationView {
-            VStack {
-                Text("Developer Pre-Alpha R1")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    .foregroundStyle(.blue)
-                    .padding(.bottom, 5)
-                Text("App Title: Growacle")
-                    .font(.headline)
-                    .padding(.bottom, 50)
-                NavigationLink(destination: PreWizardIntro()) {
-                    Text("OOBE")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-                Spacer()
-                VStack {
-                    Button("ⓘ") {
-                        showInformationAlert = true
-                        }
-                        .alert(isPresented: $showInformationAlert) {
-                            Alert(
-                                title: Text("App Information"),
-                                message: Text("Revision 1. Copyright of no one. MS SEF 2023."),
-                                dismissButton: .default(Text("Close"))
-                                )
-                    }
-                }
-            }
-        }
-    }
-}
 
 struct PreWizardIntro: View {
     var body: some View {
         //NavigationView {
             VStack {
                 Spacer()
-                Text("Welcome to Plant")
+                Text("Welcome to Growacle")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundStyle(.green)
@@ -65,7 +24,7 @@ struct PreWizardIntro: View {
                     .frame(width: 200, height: 200)
                     .padding(.bottom, 50)
                     
-                Text("Plant will help you to find a plant that works for you! Insert real description")
+                Text("Insert description.")
                     .font(.headline)
                     
                     .fontWeight(.medium)
@@ -539,11 +498,7 @@ struct FifthOOBEPrompt: View {
                 .scaledToFit()
                 .padding(.bottom, -35)
 
+            
         }
     }
-}
-
-
-#Preview {
-    ContentView()
 }

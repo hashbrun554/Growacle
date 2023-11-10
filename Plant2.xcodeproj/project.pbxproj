@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCA9DF182ADCD0270083A38A /* Plant2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9DF172ADCD0270083A38A /* Plant2App.swift */; };
-		CCA9DF1A2ADCD0270083A38A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9DF192ADCD0270083A38A /* ContentView.swift */; };
-		CCA9DF1C2ADCD0270083A38A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9DF1B2ADCD0270083A38A /* Item.swift */; };
-		CCA9DF1E2ADCD0280083A38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA9DF1D2ADCD0280083A38A /* Assets.xcassets */; };
+		CC2711C92AFD78E8005031EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2711C82AFD78E8005031EC /* Assets.xcassets */; };
+		CC2711CB2AFDC235005031EC /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2711CA2AFDC235005031EC /* MainNavigation.swift */; };
+		CCA9DF1A2ADCD0270083A38A /* OOBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9DF192ADCD0270083A38A /* OOBE.swift */; };
 		CCA9DF212ADCD0280083A38A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA9DF202ADCD0280083A38A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC2711C82AFD78E8005031EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC2711CA2AFDC235005031EC /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
 		CCA9DF142ADCD0270083A38A /* Plant2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plant2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCA9DF172ADCD0270083A38A /* Plant2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant2App.swift; sourceTree = "<group>"; };
-		CCA9DF192ADCD0270083A38A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CCA9DF1B2ADCD0270083A38A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		CCA9DF1D2ADCD0280083A38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCA9DF192ADCD0270083A38A /* OOBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBE.swift; sourceTree = "<group>"; };
 		CCA9DF202ADCD0280083A38A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,10 +51,8 @@
 		CCA9DF162ADCD0270083A38A /* Plant2 */ = {
 			isa = PBXGroup;
 			children = (
-				CCA9DF172ADCD0270083A38A /* Plant2App.swift */,
-				CCA9DF192ADCD0270083A38A /* ContentView.swift */,
-				CCA9DF1B2ADCD0270083A38A /* Item.swift */,
-				CCA9DF1D2ADCD0280083A38A /* Assets.xcassets */,
+				CCA9DF192ADCD0270083A38A /* OOBE.swift */,
+				CC2711CA2AFDC235005031EC /* MainNavigation.swift */,
 				CCA9DF1F2ADCD0280083A38A /* Preview Content */,
 			);
 			path = Plant2;
@@ -65,6 +61,7 @@
 		CCA9DF1F2ADCD0280083A38A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				CC2711C82AFD78E8005031EC /* Assets.xcassets */,
 				CCA9DF202ADCD0280083A38A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -128,8 +125,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2711C92AFD78E8005031EC /* Assets.xcassets in Resources */,
 				CCA9DF212ADCD0280083A38A /* Preview Assets.xcassets in Resources */,
-				CCA9DF1E2ADCD0280083A38A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCA9DF1A2ADCD0270083A38A /* ContentView.swift in Sources */,
-				CCA9DF1C2ADCD0270083A38A /* Item.swift in Sources */,
-				CCA9DF182ADCD0270083A38A /* Plant2App.swift in Sources */,
+				CC2711CB2AFDC235005031EC /* MainNavigation.swift in Sources */,
+				CCA9DF1A2ADCD0270083A38A /* OOBE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -258,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -279,17 +275,19 @@
 				DEVELOPMENT_TEAM = AMYY47BCU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Growacle;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cris.Plant2;
+				PRODUCT_BUNDLE_IDENTIFIER = cris.growacle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -308,17 +306,19 @@
 				DEVELOPMENT_TEAM = AMYY47BCU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Growacle;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cris.Plant2;
+				PRODUCT_BUNDLE_IDENTIFIER = cris.growacle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
