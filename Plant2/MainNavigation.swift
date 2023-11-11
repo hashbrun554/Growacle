@@ -87,7 +87,7 @@ struct PostWizardLoadingScreen: View {
                 Text("Your ideal plant(s) will come soon!")
                     .font(.headline)
                     .fontWeight(.semibold)
-                    .padding(.top, 20)
+                    .padding(.top, 30)
                     .onAppear {
                         // Trigger the delay when PostWizardLoadingScreen appears
                         // Also run comparison code
