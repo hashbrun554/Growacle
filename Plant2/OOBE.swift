@@ -74,15 +74,14 @@ struct PreWizardIntro: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 200)
-                    .padding(.bottom, 50)
+                    .padding(.bottom, 30)
                     
-                Text("Insert description.")
-                    .font(.headline)
-                    
+                Text("Growacle is an easy to use app in which you can use a wizard to find the plant perfect for you. You will be led through a series of questions that will help narrow down a list of plants to only a few. At the end, you will be shown these plants and they will be right for you. Growacle will grow the Earth and improve your habits, one plant at a time!")
+                    .font(.subheadline)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                     .frame(width: 300)
-                    .padding(.bottom, 20)
+                    .padding(.bottom, 30)
                     
                 NavigationLink(destination: WizardIntro()) {
                     ZStack {
@@ -368,7 +367,7 @@ struct ThirdOOBEPrompt: View {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundStyle(Color.darkerGray)
                         .frame(width: 300,height: 50)
-                    Text("Frequently (2-3 days)")
+                    Text("Frequently (3-6 days)")
                         .fontWeight(.heavy)
                         .foregroundStyle(.white)
                         .font(.title3)
