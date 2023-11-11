@@ -7,6 +7,58 @@
 
 import SwiftUI
 
+
+// Begin Wizard Code
+
+var Plant1Applicable = false
+var Plant2Applicable = false
+var Plant3Applicable = false
+var Plant4Applicable = false
+var Plant5Applicable = false
+var Plant6Applicable = false
+var Plant7Applicable = false
+var Plant8Applicable = false
+var Plant9Applicable = false
+var WizardFailure = false
+
+var userSelections = [0, 0, 0, 0, 0]
+
+func compareResults() {
+    print("coimparing...")
+    if (userSelections == Plant1Attributes) {
+        Plant1Applicable = true
+    }
+    if (userSelections == Plant2Attributes) {
+        Plant2Applicable = true
+    }
+    if (userSelections == Plant3Attributes) {
+        Plant3Applicable = true
+    }
+    if (userSelections == Plant4Attributes) {
+        Plant4Applicable = true
+    }
+    if (userSelections == Plant5Attributes) {
+        Plant5Applicable = true
+    }
+    if (userSelections == Plant6Attributes) {
+        Plant6Applicable = true
+    }
+    if (userSelections == Plant7Attributes) {
+        Plant7Applicable = true
+    }
+    if (userSelections == Plant8Attributes) {
+        Plant8Applicable = true
+    }
+    if (userSelections == Plant9Attributes) {
+        Plant9Applicable = true
+    }
+    else {
+        WizardFailure = true
+    }
+}
+
+// End Wizard Code
+
 struct PreWizardIntro: View {
     var body: some View {
         //NavigationView {
@@ -132,7 +184,9 @@ struct FirstOOBEPrompt: View {
                             .font(.title3)
                     }
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[0] = 1
+            })
             
             // Outdoors
             NavigationLink(destination: SecondOOBEPrompt()) {
@@ -152,7 +206,9 @@ struct FirstOOBEPrompt: View {
                             .font(.title3)
                     }
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[0] = 2
+            })
             
             Spacer()
                 .frame(height: 80)
@@ -211,7 +267,9 @@ struct SecondOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[1] = 1
+            })
             
             //Dry
             NavigationLink(destination: ThirdOOBEPrompt()) {
@@ -224,7 +282,9 @@ struct SecondOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[1] = 2
+            })
             
             //Temperate
             NavigationLink(destination: ThirdOOBEPrompt()) {
@@ -237,7 +297,9 @@ struct SecondOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[1] = 3
+            })
             
             //Continental
             NavigationLink(destination: ThirdOOBEPrompt()) {
@@ -250,7 +312,9 @@ struct SecondOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[1] = 4
+            })
             
             // Polar
             NavigationLink(destination: ThirdOOBEPrompt()) {
@@ -263,7 +327,10 @@ struct SecondOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[1] = 5
+            })
+            
             Spacer()
             
             Text("All temepratures are in Fahrenheit. Visit [this website](https://scijinks.gov/climate-zones/) for more information on climate zones.")
@@ -306,7 +373,9 @@ struct ThirdOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[2] = 1
+            })
             
             NavigationLink(destination: FourthOOBEPrompt()) {
                 ZStack {
@@ -318,7 +387,9 @@ struct ThirdOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[2] = 2
+            })
             
             NavigationLink(destination: FourthOOBEPrompt()) {
                 ZStack {
@@ -330,7 +401,9 @@ struct ThirdOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[2] = 3
+            })
             
             Spacer()
                 .frame(height: 50)
@@ -377,7 +450,9 @@ struct FourthOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[3] = 1
+            })
             
             NavigationLink(destination: FifthOOBEPrompt()) {
                 ZStack {
@@ -389,7 +464,9 @@ struct FourthOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[3] = 2
+            })
             
             NavigationLink(destination: FifthOOBEPrompt()) {
                 ZStack {
@@ -401,7 +478,9 @@ struct FourthOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[3] = 3
+            })
             
             Spacer()
             
@@ -438,7 +517,7 @@ struct FifthOOBEPrompt: View {
                 .frame(width: 300)
                 .padding(.bottom, 50)
             
-            NavigationLink(destination: FifthOOBEPrompt()) {
+            NavigationLink(destination: PostWizardLoadingScreen().toolbar(.hidden)) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundStyle(Color.darkerGray)
@@ -448,9 +527,11 @@ struct FifthOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[4] = 1
+            })
             
-            NavigationLink(destination: FifthOOBEPrompt()) {
+            NavigationLink(destination: PostWizardLoadingScreen().toolbar(.hidden)) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundStyle(Color.darkerGray)
@@ -460,9 +541,11 @@ struct FifthOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[4] = 2
+            })
             
-            NavigationLink(destination: FifthOOBEPrompt()) {
+            NavigationLink(destination: PostWizardLoadingScreen().toolbar(.hidden)) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundStyle(Color.darkerGray)
@@ -472,9 +555,11 @@ struct FifthOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[4] = 3
+            })
             
-            NavigationLink(destination: FifthOOBEPrompt()) {
+            NavigationLink(destination: PostWizardLoadingScreen().toolbar(.hidden)) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundStyle(Color.darkerGray)
@@ -484,7 +569,23 @@ struct FifthOOBEPrompt: View {
                         .foregroundStyle(.white)
                         .font(.title3)
                 }
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[4] = 4
+            })
+            
+            NavigationLink(destination: PostWizardLoadingScreen().toolbar(.hidden)) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundStyle(Color.darkerGray)
+                        .frame(width: 300,height: 50)
+                    Text("Aesthetic looks")
+                        .fontWeight(.heavy)
+                        .foregroundStyle(.white)
+                        .font(.title3)
+                }
+            }.simultaneousGesture(TapGesture().onEnded{
+                userSelections[4] = 5
+            })
             
             Spacer()
             

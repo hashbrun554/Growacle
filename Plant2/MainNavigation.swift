@@ -7,7 +7,6 @@
 
 import SwiftUI
 import SwiftData
-import Foundation
 
 @main
 struct Plant2App: App {
@@ -36,7 +35,7 @@ struct DebugView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Developer Pre-Alpha R1")
+                Text("Preview Menu")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .foregroundStyle(.blue)
@@ -71,12 +70,94 @@ struct DebugView: View {
 }
 
 struct PostWizardLoadingScreen: View {
+    @State private var isNavigationActive = false
+
     var body: some View {
-        Text("Working on it...")
-        ProgressView()
-        Text("Your ideal plant(s) will come soon!")
+        NavigationView {
+            VStack {
+                Text("Working on it...")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.green)
+                    .padding(.bottom, 20)
+
+                ProgressView()
+                    .controlSize(.large)
+
+                Text("Your ideal plant(s) will come soon!")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                    .padding(.top, 20)
+                    .onAppear {
+                        // Trigger the delay when PostWizardLoadingScreen appears
+                        // Also run comparison code
+                        
+                        compareResults()
+                        
+                        /* test code
+                        print("function ran.")
+                        print(String(Plant7Applicable))
+                         */
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + Double.random(in: 3...6)) {
+                            withAnimation {
+                                isNavigationActive = true
+                            }
+                        }
+                    }
+                    .background(
+                        NavigationLink(
+                            destination: ResultsView().toolbar(.hidden),
+                            isActive: $isNavigationActive
+                        ) {
+                            EmptyView()
+                        }
+                        .hidden()
+                    )
+            }
+        }
     }
 }
+
+struct ResultsView: View {
+    var body: some View {
+        VStack {
+            Text("Results:")
+            
+            // Test with [1, 3, 1, 2, 2]
+            
+            
+            if (Plant1Applicable) {
+                Text("1")
+            }
+            if (Plant2Applicable) {
+                Text("2")
+            }
+            if (Plant3Applicable) {
+                Text("3")
+            }
+            if (Plant4Applicable) {
+                Text("4")
+            }
+            if (Plant5Applicable) {
+                Text("5")
+            }
+            if (Plant6Applicable) {
+                Text("6")
+            }
+            if (Plant7Applicable) {
+                Text("7")
+            }
+            if (Plant8Applicable) {
+                Text("8")
+            }
+            if (Plant9Applicable) {
+                Text("9")
+            }
+        }
+    }
+}
+
 
 #Preview {
     ContentView()
