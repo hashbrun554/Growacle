@@ -24,7 +24,7 @@ var WizardFailure = false
 var userSelections = [0, 0, 0, 0, 0]
 
 func compareResults() {
-    print("coimparing...")
+    // print("coimparing...")
     if (userSelections == Plant1Attributes) {
         Plant1Applicable = true
     }
