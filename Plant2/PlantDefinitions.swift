@@ -24,7 +24,72 @@ let Plant9Attributes = [2, 3, 1, 3, 3]
 // Bunny ear cactus (1)
 struct Plant1Preview: View {
     var body: some View {
-        Text("Bunny ear cactus")
+        ScrollView(showsIndicators: false) {
+            CircleImage(image: Image("Plant1PreviewThumb").resizable())
+                .frame(width: 320, height: 300)
+                .padding()
+            ZStack {
+                RoundedRectangle(cornerRadius: 15)
+                    .frame(width: 340, height: 80)
+                    .foregroundStyle(Color(.deepGray))
+                VStack {
+                    Text("Bunny Ear Cactus")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.black)
+                        .foregroundStyle(.white)
+                    Text("opuntia microdasys")
+                        .font(.subheadline)
+                        .fontWeight(.light)
+                        .italic()
+                        .padding(.bottom, 3)
+                }
+            }.padding(.bottom, 20)
+            
+            ZStack {
+                RoundedRectangle(cornerRadius: 15)
+                    .frame(width: 340, height: 130)
+                    .foregroundStyle(Color(.deepGray))
+                VStack {
+                    Text("Description")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .padding(.trailing, 145)
+                        .padding(.bottom, 0.1)
+                    Text("The Bunny ear cactus is a bushy, perennial cactus with oval to round, flattened, small pads.")
+                        .font(.headline)
+                        .fontWeight(.light)
+                        .foregroundStyle(.white)
+                        .frame(width: 310)
+                        .padding(.trailing, 30)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                }
+            }.padding(.bottom, 20)
+            
+            ZStack {
+                RoundedRectangle(cornerRadius: 15)
+                    .frame(width: 340, height: 60)
+                    .foregroundStyle(Color(.deepGray))
+                Text("Images")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            }.padding(.bottom, 20)
+            
+            Image("NoImageAvailable")
+                .resizable()
+                .frame(width: 340, height: 191)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+                .padding(.bottom, 20)
+            Image("NoImageAvailable")
+                .resizable()
+                .frame(width: 340, height: 191)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+                .padding(.bottom, 20)
+            Image("NoImageAvailable")
+                .resizable()
+                .frame(width: 340, height: 191)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+                .padding(.bottom, 20)
+        }
     }
 }
 
@@ -84,3 +149,19 @@ struct Plant9Preview: View {
     }
 }
 
+struct CircleImage: View {
+    var image: Image
+
+    var body: some View {
+        image
+            .clipShape(Circle())
+            .overlay {
+                Circle().stroke(.white, lineWidth: 4)
+            }
+            .shadow(radius: 7)
+    }
+}
+
+#Preview {
+    Plant1Preview()
+}
