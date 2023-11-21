@@ -1,7 +1,7 @@
 # Growacle
 MS SEF 2023 Project
 
-Growacle is a~~temporary name, I'm not sure what the name should be yet~~ somewhat permanent name because that is the best we could come up with.
+Growacle is a ~~temporary name, I'm not sure what the name should be yet~~ somewhat permanent name because that is the best we could come up with.
 
 ## Current Features
 
