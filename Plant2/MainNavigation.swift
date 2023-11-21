@@ -43,7 +43,8 @@ struct DebugView: View {
                 Text("App Title: Growacle")
                     .font(.headline)
                     .padding(.bottom, 50)
-                NavigationLink(destination: PreWizardIntro()) {
+                NavigationLink(destination: PreWizardIntro().navigationBarBackButtonHidden(true)
+                    .navigationBarHidden(false)) {
                     Text("OOBE")
                         .font(.title)
                         .foregroundColor(.white)
