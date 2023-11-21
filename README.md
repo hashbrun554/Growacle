@@ -1,15 +1,17 @@
 # Growacle
 MS SEF 2023 Project
 
-Growacle is a temporary name, I'm not sure what the name should be yet.
+Growacle is a ~~temporary name, I'm not sure what the name should be yet~~somewhat permanent name because that is the best we could come up with.
 
 ## Current Features
+
 - GUI for OOBE (out-of-box-experience)
 - Debug menu
+- Functional plant wizard
 
 ## Projected features
 Percentage is how likely the feature is to actually be implemented.
-- Functional plant wizard (planned out) (100%)
+
 - 3-tab navigation menu (100%)
 - Check-in system that increases mastery points, which increase the level (90%)
 - Level-up system (80%)
