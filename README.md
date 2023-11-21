@@ -1,7 +1,7 @@
 # Growacle
 MS SEF 2023 Project
 
-Growacle is a ~~temporary name, I'm not sure what the name should be yet~~somewhat permanent name because that is the best we could come up with.
+Growacle is a~~temporary name, I'm not sure what the name should be yet~~ somewhat permanent name because that is the best we could come up with.
 
 ## Current Features
 
@@ -13,7 +13,7 @@ Growacle is a ~~temporary name, I'm not sure what the name should be yet~~somewh
 Percentage is how likely the feature is to actually be implemented.
 
 - 3-tab navigation menu (100%)
-- Check-in system that increases mastery points, which increase the level (90%)
+- Check-in system that increases mastery points, which increases the level (90%)
 - Level-up system (80%)
 - Stats view (100%)
 - Recommended articles (90%)
@@ -23,4 +23,4 @@ Percentage is how likely the feature is to actually be implemented.
 ## Wishlist features
 - Animations wherever possible (60%)
 - Plant quizzes for knowledge checking (40%)
-- Commmunity posting (10%)
+- Community posting (10%)
