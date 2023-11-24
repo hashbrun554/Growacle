@@ -11,7 +11,6 @@
 		CC2711CB2AFDC235005031EC /* SelectionNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2711CA2AFDC235005031EC /* SelectionNavigation.swift */; };
 		CC9148312AFEBE56004F7FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9148302AFEBE56004F7FDF /* Assets.xcassets */; };
 		CC9AEADA2B0DCBCC00563FA8 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9AEAD92B0DCBCC00563FA8 /* MainNavigation.swift */; };
-		CC9AEADD2B0DD5B400563FA8 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = CC9AEADC2B0DD5B400563FA8 /* FLAnimatedImage */; };
 		CCA9DF1A2ADCD0270083A38A /* OOBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9DF192ADCD0270083A38A /* OOBE.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +28,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC9AEADD2B0DD5B400563FA8 /* FLAnimatedImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +79,6 @@
 			);
 			name = Growacle;
 			packageProductDependencies = (
-				CC9AEADC2B0DD5B400563FA8 /* FLAnimatedImage */,
 			);
 			productName = Plant2;
 			productReference = CCA9DF142ADCD0270083A38A /* Growacle.app */;
@@ -112,7 +109,6 @@
 			);
 			mainGroup = CCA9DF0B2ADCD0270083A38A;
 			packageReferences = (
-				CC9AEADB2B0DD5B400563FA8 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */,
 			);
 			productRefGroup = CCA9DF152ADCD0270083A38A /* Products */;
 			projectDirPath = "";
@@ -350,25 +346,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CC9AEADB2B0DD5B400563FA8 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Flipboard/FLAnimatedImage";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.17;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CC9AEADC2B0DD5B400563FA8 /* FLAnimatedImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CC9AEADB2B0DD5B400563FA8 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */;
-			productName = FLAnimatedImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCA9DF0C2ADCD0270083A38A /* Project object */;
 }

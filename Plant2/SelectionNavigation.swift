@@ -73,82 +73,81 @@ struct DebugView: View {
 struct PostWizardLoadingScreen: View {
     @State private var isNavigationActive = false
     @State var applicablePlants: [String: String] = [:]
-
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 Text("Working on it...")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundStyle(.green)
                     .padding(.bottom, 20)
-
+                
                 ProgressView()
                     .controlSize(.large)
-
+                
                 Text("Your ideal plant(s) will come soon!")
                     .font(.headline)
                     .fontWeight(.semibold)
                     .padding(.top, 30)
                     .onAppear {
                         compareResults()
-                        
+                        setApplicablePlants(applicablePlants: $applicablePlants)
                         DispatchQueue.main.asyncAfter(deadline: .now() + Double.random(in: 3...6)) {
                             withAnimation {
                                 isNavigationActive = true
-                                if Plant1Applicable {
-                                    applicablePlants["Plant1Preview"] = "Bunny Ears Cactus"
-                                }
-
-                                if Plant2Applicable {
-                                    applicablePlants["Plant2Preview"] = "Moth Orchid"
-                                }
-
-                                if Plant3Applicable {
-                                    applicablePlants["Plant3Preview"] = "Areca Palm Plant"
-                                }
-
-                                if Plant4Applicable {
-                                    applicablePlants["Plant4Preview"] = "Snake Plant"
-                                }
-
-                                if Plant5Applicable {
-                                    applicablePlants["Plant5Preview"] = "Aloe Vera"
-                                }
-
-                                if Plant6Applicable {
-                                    applicablePlants["Plant6Preview"] = "Laceleaf"
-                                }
-
-                                if Plant7Applicable {
-                                    applicablePlants["Plant7Preview"] = "Basil"
-                                }
-
-                                if Plant8Applicable {
-                                    applicablePlants["Plant8Preview"] = "Rosemary"
-                                }
-
-                                if Plant9Applicable {
-                                    applicablePlants["Plant9Preview"] = "Cherry Tomato"
-                                }
-                                /*
-                                // test code
-                                print(applicablePlants)
-                                 */
                             }
                         }
                     }
                     .background(
-                        NavigationLink(
-                            destination: ResultsView(applicablePlants: $applicablePlants).toolbar(.hidden),
-                            isActive: $isNavigationActive
-                        ) {
+                        Button(action: {
+                            isNavigationActive = true
+                        }, label: {
                             EmptyView()
+                        })
+                        .navigationDestination(isPresented: $isNavigationActive) {
+                            ResultsView(applicablePlants: $applicablePlants).toolbar(.hidden)
                         }
-                        .hidden()
                     )
             }
         }
+    }
+}
+
+func setApplicablePlants(applicablePlants: Binding<[String: String]>) {
+    if Plant1Applicable {
+        applicablePlants.wrappedValue["Plant1Preview"] = "Bunny Ears Cactus"
+    }
+
+    if Plant2Applicable {
+        applicablePlants.wrappedValue["Plant2Preview"] = "Moth Orchid"
+    }
+
+    if Plant3Applicable {
+        applicablePlants.wrappedValue["Plant3Preview"] = "Areca Palm Plant"
+    }
+
+    if Plant4Applicable {
+        applicablePlants.wrappedValue["Plant4Preview"] = "Snake Plant"
+    }
+
+    if Plant5Applicable {
+        applicablePlants.wrappedValue["Plant5Preview"] = "Aloe Vera"
+    }
+
+    if Plant6Applicable {
+        applicablePlants.wrappedValue["Plant6Preview"] = "Laceleaf"
+    }
+
+    if Plant7Applicable {
+        applicablePlants.wrappedValue["Plant7Preview"] = "Basil"
+    }
+
+    if Plant8Applicable {
+        applicablePlants.wrappedValue["Plant8Preview"] = "Rosemary"
+    }
+
+    if Plant9Applicable {
+        applicablePlants.wrappedValue["Plant9Preview"] = "Cherry Tomato"
     }
 }
 
@@ -284,8 +283,9 @@ struct ResultsView: View {
 
 struct SelectionConfirmation: View {
     var selectedPlant: Int
+    @AppStorage("PLANT_NUMBER_KEY") var savedSelectedPlant = 0
     var body: some View {
-        Text("plant selected")
+        Text("plant selected: \(selectedPlant)")
     }
 }
 
