@@ -24,79 +24,35 @@ let Plant9Attributes = [2, 3, 1, 3, 3]
 // Bunny ear cactus (1)
 struct Plant1Preview: View {
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            CircleImage(image: Image("Plant1PreviewThumb").resizable())
-                .frame(width: 320, height: 300)
-                .padding()
+        Text("Bunny Ear Cactus")
+        NavigationLink(destination: SelectionConfirmation(selectedPlant: 1).toolbar(.hidden)) {
             ZStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .frame(width: 340, height: 80)
-                    .foregroundStyle(Color(.deepGray))
-                VStack {
-                    Text("Bunny Ear Cactus")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .fontWeight(.black)
-                        .foregroundStyle(.white)
-                    Text("opuntia microdasys")
-                        .font(.subheadline)
-                        .fontWeight(.light)
-                        .italic()
-                        .padding(.bottom, 3)
-                }
-            }.padding(.bottom, 20)
-            
-            ZStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .frame(width: 340, height: 130)
-                    .foregroundStyle(Color(.deepGray))
-                VStack {
-                    Text("Description")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .padding(.trailing, 145)
-                        .padding(.bottom, 0.1)
-                    Text("The Bunny ear cactus is a bushy, perennial cactus with oval to round, flattened, small pads.")
-                        .font(.headline)
-                        .fontWeight(.light)
-                        .foregroundStyle(.white)
-                        .frame(width: 310)
-                        .padding(.trailing, 30)
-                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                }
-            }.padding(.bottom, 20)
-            
-            ZStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .frame(width: 340, height: 60)
-                    .foregroundStyle(Color(.deepGray))
-                Text("Images")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-            }.padding(.bottom, 20)
-            
-            Image("NoImageAvailable")
-                .resizable()
-                .frame(width: 340, height: 191)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
-                .padding(.bottom, 20)
-            Image("NoImageAvailable")
-                .resizable()
-                .frame(width: 340, height: 191)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
-                .padding(.bottom, 20)
-            Image("NoImageAvailable")
-                .resizable()
-                .frame(width: 340, height: 191)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
-                .padding(.bottom, 20)
+                RoundedRectangle(cornerRadius:15)
+                    .foregroundStyle(.green)
+                    .frame(width: 340, height: 70)
+                Text("This is the one!")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+            }
         }
     }
 }
-
 // Orchid (2)
 struct Plant2Preview: View {
     var body: some View {
         Text("Orchid")
+        NavigationLink(destination: SelectionConfirmation(selectedPlant: 2).toolbar(.hidden)) {
+            ZStack {
+                RoundedRectangle(cornerRadius:15)
+                    .foregroundStyle(.green)
+                    .frame(width: 340, height: 70)
+                Text("This is the one!")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+            }
+        }
     }
 }
 
@@ -196,6 +152,17 @@ struct Plant7Preview: View {
                 .frame(width: 340, height: 191)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
                 .padding(.bottom, 20)
+            NavigationLink(destination: SelectionConfirmation(selectedPlant: 7).toolbar(.hidden)) {
+                ZStack {
+                    RoundedRectangle(cornerRadius:15)
+                        .foregroundStyle(.green)
+                        .frame(width: 340, height: 70)
+                    Text("This is the one!")
+                        .font(.title)
+                        .fontWeight(.black)
+                        .foregroundStyle(.white)
+                }
+            }
         }
     }
 }
@@ -268,6 +235,17 @@ struct Plant8Preview: View {
                 .frame(width: 340, height: 191)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
                 .padding(.bottom, 20)
+            NavigationLink(destination: SelectionConfirmation(selectedPlant: 8).toolbar(.hidden)) {
+                ZStack {
+                    RoundedRectangle(cornerRadius:15)
+                        .foregroundStyle(.green)
+                        .frame(width: 340, height: 70)
+                    Text("This is the one!")
+                        .font(.title)
+                        .fontWeight(.black)
+                        .foregroundStyle(.white)
+                }
+            }
         }
     }
 }
@@ -292,6 +270,7 @@ struct CircleImage: View {
     }
 }
 
+
 #Preview {
-    Plant8Preview()
+    Plant7Preview()
 }
