@@ -60,6 +60,17 @@ struct Plant2Preview: View {
 struct Plant3Preview: View {
     var body: some View {
         Text("Areca Palm Plant")
+        NavigationLink(destination: SelectionConfirmation(selectedPlant: 3).toolbar(.hidden)) {
+            ZStack {
+                RoundedRectangle(cornerRadius:15)
+                    .foregroundStyle(.green)
+                    .frame(width: 340, height: 70)
+                Text("This is the one!")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+            }
+        }
     }
 }
 
@@ -67,6 +78,17 @@ struct Plant3Preview: View {
 struct Plant4Preview: View {
     var body: some View {
         Text("Snake plant")
+        NavigationLink(destination: SelectionConfirmation(selectedPlant: 4).toolbar(.hidden)) {
+            ZStack {
+                RoundedRectangle(cornerRadius:15)
+                    .foregroundStyle(.green)
+                    .frame(width: 340, height: 70)
+                Text("This is the one!")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+            }
+        }
     }
 }
 
@@ -74,6 +96,17 @@ struct Plant4Preview: View {
 struct Plant5Preview: View {
     var body: some View {
         Text("Aloe Vera")
+        NavigationLink(destination: SelectionConfirmation(selectedPlant: 5).toolbar(.hidden)) {
+            ZStack {
+                RoundedRectangle(cornerRadius:15)
+                    .foregroundStyle(.green)
+                    .frame(width: 340, height: 70)
+                Text("This is the one!")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+            }
+        }
     }
 }
 
@@ -81,6 +114,17 @@ struct Plant5Preview: View {
 struct Plant6Preview: View {
     var body: some View {
         Text("Laceleaf")
+        NavigationLink(destination: SelectionConfirmation(selectedPlant: 6).toolbar(.hidden)) {
+            ZStack {
+                RoundedRectangle(cornerRadius:15)
+                    .foregroundStyle(.green)
+                    .frame(width: 340, height: 70)
+                Text("This is the one!")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+            }
+        }
     }
 }
 
@@ -254,6 +298,17 @@ struct Plant8Preview: View {
 struct Plant9Preview: View {
     var body: some View {
         Text("Cherry Tomatoes")
+        NavigationLink(destination: SelectionConfirmation(selectedPlant: 9).toolbar(.hidden)) {
+            ZStack {
+                RoundedRectangle(cornerRadius:15)
+                    .foregroundStyle(.green)
+                    .frame(width: 340, height: 70)
+                Text("This is the one!")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+            }
+        }
     }
 }
 
