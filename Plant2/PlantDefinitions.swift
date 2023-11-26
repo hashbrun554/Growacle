@@ -128,30 +128,35 @@ struct Plant6Preview: View {
     }
 }
 
+struct Plant7PreviewInfo: View {
+    var body: some View {
+        CircleImage(image: Image("Plant7PreviewThumb").resizable())
+            .frame(width: 320, height: 300)
+            .padding()
+        ZStack {
+            RoundedRectangle(cornerRadius: 15)
+                .frame(width: 340, height: 80)
+                .foregroundStyle(Color(.deepGray))
+            VStack {
+                Text("Basil")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+                Text("ocimum basilicum")
+                    .font(.subheadline)
+                    .fontWeight(.light)
+                    .italic()
+                    .padding(.bottom, 3)
+            }
+        }.padding(.bottom, 20)
+    }
+}
+
 // Basil (7)
 struct Plant7Preview: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
-            CircleImage(image: Image("Plant7PreviewThumb").resizable())
-                .frame(width: 320, height: 300)
-                .padding()
-            ZStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .frame(width: 340, height: 80)
-                    .foregroundStyle(Color(.deepGray))
-                VStack {
-                    Text("Basil")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .fontWeight(.black)
-                        .foregroundStyle(.white)
-                    Text("ocimum basilicum")
-                        .font(.subheadline)
-                        .fontWeight(.light)
-                        .italic()
-                        .padding(.bottom, 3)
-                }
-            }.padding(.bottom, 20)
-            
+            Plant7PreviewInfo()
             ZStack {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(width: 340, height: 150)
@@ -211,30 +216,33 @@ struct Plant7Preview: View {
     }
 }
 
+struct Plant8PreviewInfo: View {
+    var body: some View {
+        CircleImage(image: Image("Plant8PreviewThumb").resizable())
+            .frame(width: 320, height: 300)
+            .padding()
+        ZStack {
+            RoundedRectangle(cornerRadius: 15)
+                .frame(width: 340, height: 80)
+                .foregroundStyle(Color(.deepGray))
+            VStack {
+                Text("Rosemary")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+                Text("salvia rosmarinus")
+                    .font(.subheadline)
+                    .fontWeight(.light)
+                    .italic()
+                    .padding(.bottom, 3)
+            }
+        }.padding(.bottom, 20)
+    }
+}
 // Rosemary (8)
 struct Plant8Preview: View {
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            CircleImage(image: Image("Plant8PreviewThumb").resizable())
-                .frame(width: 320, height: 300)
-                .padding()
-            ZStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .frame(width: 340, height: 80)
-                    .foregroundStyle(Color(.deepGray))
-                VStack {
-                    Text("Rosemary")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .fontWeight(.black)
-                        .foregroundStyle(.white)
-                    Text("salvia rosmarinus")
-                        .font(.subheadline)
-                        .fontWeight(.light)
-                        .italic()
-                        .padding(.bottom, 3)
-                }
-            }.padding(.bottom, 20)
-            
+        Plant8PreviewInfo()
             ZStack {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(width: 340, height: 135)
@@ -288,7 +296,6 @@ struct Plant8Preview: View {
                         .font(.title)
                         .fontWeight(.black)
                         .foregroundStyle(.white)
-                }
             }
         }
     }
@@ -324,7 +331,6 @@ struct CircleImage: View {
             .shadow(radius: 7)
     }
 }
-
 
 #Preview {
     Plant7Preview()

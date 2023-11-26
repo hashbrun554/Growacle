@@ -6,69 +6,6 @@
 //
 
 import SwiftUI
-import SwiftData
-
-@main
-struct Plant2App: App {
-    var body: some Scene {
-        WindowGroup {
-            // Dev testing
-            DebugView()
-        }
-    }
-}
-
-extension Color {
-    static var darkerGray = Color("DeepGray")
-}
-
-struct ContentView: View {
-    var body: some View {
-        // Create proper intialization function
-        DebugView()
-    }
-}
-
-struct DebugView: View {
-    @State private var showInformationAlert = false
-    
-    var body: some View {
-        NavigationView {
-            VStack {
-                Text("Preview Menu")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    .foregroundStyle(.blue)
-                    .padding(.bottom, 5)
-                Text("App Title: Growacle")
-                    .font(.headline)
-                    .padding(.bottom, 50)
-                NavigationLink(destination: PreWizardIntro().navigationBarBackButtonHidden(true)
-                    .navigationBarHidden(false)) {
-                    Text("OOBE")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-                Spacer()
-                VStack {
-                    Button("ⓘ") {
-                        showInformationAlert = true
-                        }
-                        .alert(isPresented: $showInformationAlert) {
-                            Alert(
-                                title: Text("App Information"),
-                                message: Text("Revision 1. Copyright of no one. MS SEF 2023."),
-                                dismissButton: .default(Text("Close"))
-                                )
-                    }
-                }
-            }
-        }
-    }
-}
 
 struct PostWizardLoadingScreen: View {
     @State private var isNavigationActive = false
@@ -283,12 +220,38 @@ struct ResultsView: View {
 
 struct SelectionConfirmation: View {
     var selectedPlant: Int
-    @AppStorage("PLANT_NUMBER_KEY") var savedSelectedPlant = 0
+    var navigateToMainMenu = false
     var body: some View {
-        Text("plant selected: \(selectedPlant)")
+        Text("Hooray!")
+            .font(.system(size: 50))
+            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            .foregroundStyle(.green)
+            .padding(.bottom, -20)
+        
+        Image("PlantConfirmationImage")
+            .resizable()
+            .frame(width: 200, height: 200)
+        
+        Text("Welcome to your new growing\njourney!")
+            .font(.system(size: 20))
+            .multilineTextAlignment(.center)
+            .padding(.bottom, 30)
+        NavigationLink(destination: MainMenu()
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(false)) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 15)
+                    .foregroundStyle(.green)
+                    .frame(width: 340,height: 50)
+                Text("Continue to Main Menu")
+                    .fontWeight(.heavy)
+                    .foregroundStyle(.white)
+                    .font(.title3)
+            }
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    SelectionConfirmation(selectedPlant: 7)
 }

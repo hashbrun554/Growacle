@@ -11,6 +11,9 @@
 		CC2711CB2AFDC235005031EC /* SelectionNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2711CA2AFDC235005031EC /* SelectionNavigation.swift */; };
 		CC9148312AFEBE56004F7FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9148302AFEBE56004F7FDF /* Assets.xcassets */; };
 		CC9AEADA2B0DCBCC00563FA8 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9AEAD92B0DCBCC00563FA8 /* MainNavigation.swift */; };
+		CC9AEAFE2B12AC3F00563FA8 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = CC9AEAFD2B12AC3F00563FA8 /* URLImage */; };
+		CC9AEB002B12AC3F00563FA8 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = CC9AEAFF2B12AC3F00563FA8 /* URLImageStore */; };
+		CC9AEB052B12B80500563FA8 /* AppInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9AEB042B12B80500563FA8 /* AppInitialization.swift */; };
 		CCA9DF1A2ADCD0270083A38A /* OOBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9DF192ADCD0270083A38A /* OOBE.swift */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +22,7 @@
 		CC2711CA2AFDC235005031EC /* SelectionNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionNavigation.swift; sourceTree = "<group>"; };
 		CC9148302AFEBE56004F7FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC9AEAD92B0DCBCC00563FA8 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		CC9AEB042B12B80500563FA8 /* AppInitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitialization.swift; sourceTree = "<group>"; };
 		CCA9DF142ADCD0270083A38A /* Growacle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Growacle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA9DF192ADCD0270083A38A /* OOBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBE.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -28,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9AEB002B12AC3F00563FA8 /* URLImageStore in Frameworks */,
+				CC9AEAFE2B12AC3F00563FA8 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,7 @@
 				CC2711CA2AFDC235005031EC /* SelectionNavigation.swift */,
 				CC0473BF2AFF629600EB8ECD /* PlantDefinitions.swift */,
 				CC9AEAD92B0DCBCC00563FA8 /* MainNavigation.swift */,
+				CC9AEB042B12B80500563FA8 /* AppInitialization.swift */,
 				CC9148302AFEBE56004F7FDF /* Assets.xcassets */,
 			);
 			path = Plant2;
@@ -79,6 +86,8 @@
 			);
 			name = Growacle;
 			packageProductDependencies = (
+				CC9AEAFD2B12AC3F00563FA8 /* URLImage */,
+				CC9AEAFF2B12AC3F00563FA8 /* URLImageStore */,
 			);
 			productName = Plant2;
 			productReference = CCA9DF142ADCD0270083A38A /* Growacle.app */;
@@ -109,6 +118,7 @@
 			);
 			mainGroup = CCA9DF0B2ADCD0270083A38A;
 			packageReferences = (
+				CC9AEAFC2B12AC3F00563FA8 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = CCA9DF152ADCD0270083A38A /* Products */;
 			projectDirPath = "";
@@ -137,6 +147,7 @@
 			files = (
 				CC9AEADA2B0DCBCC00563FA8 /* MainNavigation.swift in Sources */,
 				CC2711CB2AFDC235005031EC /* SelectionNavigation.swift in Sources */,
+				CC9AEB052B12B80500563FA8 /* AppInitialization.swift in Sources */,
 				CC0473C02AFF629600EB8ECD /* PlantDefinitions.swift in Sources */,
 				CCA9DF1A2ADCD0270083A38A /* OOBE.swift in Sources */,
 			);
@@ -346,6 +357,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC9AEAFC2B12AC3F00563FA8 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC9AEAFD2B12AC3F00563FA8 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC9AEAFC2B12AC3F00563FA8 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		CC9AEAFF2B12AC3F00563FA8 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC9AEAFC2B12AC3F00563FA8 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCA9DF0C2ADCD0270083A38A /* Project object */;
 }
