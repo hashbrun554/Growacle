@@ -242,7 +242,8 @@ struct Plant8PreviewInfo: View {
 // Rosemary (8)
 struct Plant8Preview: View {
     var body: some View {
-        Plant8PreviewInfo()
+        ScrollView(showsIndicators: false) {
+            Plant8PreviewInfo()
             ZStack {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(width: 340, height: 135)
@@ -296,6 +297,7 @@ struct Plant8Preview: View {
                         .font(.title)
                         .fontWeight(.black)
                         .foregroundStyle(.white)
+                }
             }
         }
     }
