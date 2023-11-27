@@ -7,6 +7,7 @@
 
 import SwiftUI
 import URLImage
+import UserNotifications
 
 extension Color {
     static var darkerGray = Color("DeepGray")
