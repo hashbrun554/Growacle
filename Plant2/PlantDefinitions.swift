@@ -167,7 +167,7 @@ struct Plant7Preview: View {
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .padding(.trailing, 150)
                         .padding(.bottom, 0.1)
-                    Text("Basil is an annual herb of the mint family, grown for its aromatic leaves. Basil is likely native to India and is widely grown as a kitchen herb")
+                    Text("Basil is an annual herb of the mint family, grown for its aromatic leaves. Basil is likely native to India and is widely grown as a kitchen herb.")
                         .font(.headline)
                         .fontWeight(.light)
                         .foregroundStyle(.white)
